@@ -10,7 +10,9 @@ namespace ApiCountry.Models
     {
         public DataContext():base("DefaultConnection")
         {
-
+            
         }
+
+        public System.Data.Entity.DbSet<ApiCountry.Models.Country> Countries { get; set; }
     }
 }
